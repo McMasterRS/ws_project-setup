@@ -40,4 +40,34 @@ Both GitHub and GitLab provide excellent solutions for code management and versi
 - **Self-hosted Installations:** GitLab allows teams to host a private version of GitLab on their servers in the free tier. This gives the team a greater deal of control over the platform and allows them to optimize their workflow by configuring platform update times and having more granular control over access to their projects. GitHub also supports hosting a private instance of the repository management system, but this feature is limited to the enterprise plan. Hosting a private instance is also more common in GitLab, so you may be able to find more resources on this topic in the GitLab online community.
 - **Cost:** GitLab is marketed as a complete feature-packed DevOps platform that reduces the need for additional software management tools. As such, its paid plans are more expensive than their GitHub counterparts. Both platforms offer a free plan, a mid-tier paid plan (GitHub Team vs. GitLab Premium), and a top tier paid plan (GitHub Enterprise vs. GitLab Ultimate). Both platforms offer the option to buy additional add-ons in the form of compute credits or storage space. When comparing costs between these platforms, it is important to account for the costs of any additional paid extensions that GitHub may require to match the GitLab feature set.
 
+## Convert an Existing Non-Empty Project Directory into a Git Working Directory
+
+If you already have a directory on your local machine containing your project files, you can turn this folder into a Git working directory by following the commands below:
+
+1. Navigate to your project directory:
+```
+cd project-dir
+```
+2. Initialize the directory:
+```
+git init
+```
+3. Add files in your working directory to the Git staging area:
+```
+git add .
+```
+4. Commit your changes:
+```
+git commit -m "inital commit"
+```
+5. Create a new repository on [GitHub](https://docs.github.com/en/get-started/quickstart/create-a-repo) or [GitLab](https://docs.gitlab.com/ee/user/project/) and grab its URL
+6. Add the remote URL:
+```
+git remote add origin <url>
+```
+7. Push your changes:
+```
+git push -u origin main
+```
+
 If you would like a more detailed comparison of GitHub and GitLab, please consult our [Introduction to Git Repository Management Services](https://mcmasterrs.github.io/lm_repo-management) learning module. 
