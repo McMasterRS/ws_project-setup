@@ -1,6 +1,6 @@
 title: Setting Up a New Software Project # *** Enter workshop title here
 github_repo_url: "https://mcmasterrs.github.io/ws_project-setup/" # ***Enter workshop URL (in github pages) here
-gh_edit_repository: "https://github.com/McMasterRS/ws_project-setup/" #*** ENTER the github URL for your repo
+gh_edit_repository: "https://github.com/McMasterRS/ws_project-setup/" # *** ENTER the github URL for your repo
 
 subtitle: "Research Software Development Workshop - Setting Up a New Software Project"
 favicon_ico: "https://raw.githubusercontent.com/McMasterRS/workshop-template/main/assets/img/favicon.ico"
